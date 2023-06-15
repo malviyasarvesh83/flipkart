@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up To FlipKart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up Here</h1>
+        <hr>
+        <div class="form-control">
+            <input type="text" name="Fname" id="Fname" class="form-group" placeholder="Enter First Name">
+        </div>
+        <div class="form-control">
+            <input type="text" name="Lname" id="Lname" class="form-group" placeholder="Enter Last Name">
+        </div>
+        <div class="form-control">
+            <input type="email" name="email" id="email" class="form-group" placeholder="Enter Email Address">
+        </div>
+        <div class="form-control">
+            <input type="number" name="phone" id="phone" class="form-group" placeholder="Enter Phone Number">
+        </div>
+        <div class="form-control">
+            <input type="text" name="address1" id="address1" class="form-group" placeholder="Enter Address Line 1">
+        </div>
+        <div class="form-control">
+            <input type="text" name="address2" id="address2" class="form-group" placeholder="Enter Address Line 2">
+        </div>
+        <div class="form-control">
+            <input type="password" name="password1" id="password1" class="form-group" placeholder="Enter New Password">
+        </div>
+        <div class="form-control">
+            <input type="password" name="password2" id="password2" class="form-group" placeholder="Re-Enter New Password">
+        </div>
+        <div class="form-control">
+            <button type="submit" onclick="signUp()" class="form-group">Sign Up</button>
+        </div>
+        <p>Already Have An Account?<a href="Login.html">Login</a></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js" integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="signUp.js"></script>
+</body>
+</html>

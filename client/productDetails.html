@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details FlipKart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="productDetail.css">
+</head>
+<body>
+    <div class="container1">
+      <div class="logo" onclick="homePage()">
+        <img
+          src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+          alt="FlipKartLogo"
+        />
+        <p>
+          Explore <span>Plus</span
+          ><img
+            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+            alt="plusLogo"
+          />
+        </p>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search for Products, brands and more" />
+        <i class="fas fa-magnifying-glass"></i>
+      </div>
+      <div class="login">
+        <a href="Login.html">Login</a>
+      </div>
+      <div class="seller">
+        <p>Become a Seller</p>
+      </div>
+      <div class="more">
+        <p>More</p>
+      </div>
+      <div class="cart" onclick="cart()">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Cart</p>
+      </div>
+    </div>
+    <div class="container">
+        <div class="left-container"></div>
+        <div class="right-container"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+      integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="productDetails.js"></script>
+</body>
+</html>

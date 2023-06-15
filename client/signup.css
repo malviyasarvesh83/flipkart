@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2874f0;
+}
+
+.container {
+    border: 1px solid white;
+    width: 700px;
+    height: 520px;
+    margin-top: 100px;
+    margin-left: 300px;
+    background-color: #FFF;
+}
+
+.form-control {
+    width: 700px;
+    /* border: 1px solid red; */
+    height: 50px;
+}
+
+.form-group {
+    width: 700px;
+    height: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+}

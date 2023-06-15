@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container1 {
+    background-color: #2874f0;
+    height: 60px;
+    display: flex;
+}
+
+.logo {
+    margin-left: 150px;
+    line-height: 0;
+    padding-top: 10px;
+}
+
+.logo img {
+    width: 75px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.logo p {
+    color: #fff;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.logo p span {
+    color: yellow;
+}
+
+.logo p img {
+    width: 10px;
+    height: 10px;
+}
+
+.logo p:hover {
+    text-decoration: underline;
+}
+
+.search {
+    margin-left: 20px;
+    border: 1px solid white;
+    width: 450px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.search input {
+    width: 400px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search i {
+    margin-left: 20px;
+    color: #2874f0;
+    font-size: 18px;
+}
+
+.login {
+    margin-left: 30px;
+    border: 1px solid white;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #2874f0;
+}
+
+.seller {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.more {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.left-container {
+    border: 1px solid white;
+    width: 400px;
+    height: 500px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.left-container img {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.left-container button {
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.prodPrice {
+    color: green;
+}
+
+.right-container {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.right-container .mrp {
+    text-decoration: line-through;
+}
+
+.fAssured {
+    width: 100px;
+}
+
+.rating {
+    display: flex;
+    margin-top: 20px;
+}
+
+.rating p {
+    border: 1px solid black;
+    width: 40px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+}
+
+.rating p i {
+    font-size: 10px;
+}
+
+.review {
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.price span {
+    font-size: 30px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.price i {
+    font-size: 20px;
+    color: green;
+}
+
+.offers {
+    margin-top: 40px;
+}
+
+.offers p {
+    margin-top: 20px;
+}
+
+.coin {
+    margin-top: 30px;
+}
+
+.desc {
+    margin-top: 20px;
+}
+
+.fa-tag {
+    color: green;
+}
+
+.TC {
+    color: #2874f0;
+}

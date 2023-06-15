@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Address - FlipKart</title>
+</head>
+<body>
+    <input type="text" name="address1" id="address1" class="address1" placeholder="Enter Address Line 1">
+    <input type="text" name="address2" id="address2" class="address2" placeholder="Enter Address Line 2">
+    <button type="submit" onclick="updateAddress()">Update Address</button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+      integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+        const validateForm=()=>{
+            let address1=document.getElementById('address1').value;
+            let address2=document.getElementById('address2').value;
+            if (address1 == '') {
+                alert('Address1 is Required');
+                return false;
+            }
+            if (address2 == '') {
+                alert('Address2 is Required');
+                return false;
+            }
+            return true;
+        }
+
+        const updateAddress=async()=>{
+            try {
+                const token=localStorage.getItem('token');
+                if (validateForm() == true) {
+                    let address1=document.getElementById('address1').value;
+                    let address2=document.getElementById('address2').value;
+                    let response=await axios.post('http://localhost:7000/cart/updateAddress',{address1:address1,address2:address2}, {headers:{'Authorization':token}} );
+                    console.log(response);
+                    location.href='cart.html';
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    </script>
+</body>
+</html>
